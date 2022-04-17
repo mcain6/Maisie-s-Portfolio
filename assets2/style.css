@@ -1,0 +1,91 @@
+:root {
+    --rosewood:#7e4360;
+    --grey:grey;
+}
+
+.header {
+    background-color:var(--rosewood);
+}
+
+.page-title {
+    display:inline-block;
+    color:white;
+    font-family:Brush Script MT, Brush Script Std, cursive	;
+    font-style:italic;
+    font-weight:100;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+.header div ul li {
+    display:inline;
+    margin-left: 25px;
+}
+a:link {
+    color: white;
+  }
+  a:visited {
+    color:black;
+  }
+  a:hover {
+    color: hotpink;
+  }
+  a:active {
+    color:var(--grey);
+}
+
+main {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display:block;
+    width:100%;
+    margin-top: 15px;
+}
+
+.chunk {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--grey);
+    margin:5px;
+    text-align: center;
+}
+
+.tagline h2,
+.projects h2,
+.about h2 {
+    font-size:30px;
+}
+
+.tagline p,
+.projects p,
+.about p {
+    font-style:italic;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--rosewood);
+    text-align:center;
+}
+
+.rose-icons {
+    display: inline;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 576px);{
+    .page-title {
+        font-size: 10px;
+    }
+}
